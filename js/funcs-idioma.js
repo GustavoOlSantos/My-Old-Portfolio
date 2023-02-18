@@ -1,4 +1,4 @@
-function idiomaSetado(page) {
+/* function idiomaSetado(page) {
 
     const idioma = localStorage.getItem('idioma');
 
@@ -255,4 +255,4 @@ function Idioma(idioma, page) {
 
         });
     }
-}
+} */
