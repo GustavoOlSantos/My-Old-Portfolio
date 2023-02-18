@@ -79,7 +79,7 @@ body::-webkit-scrollbar {
     height: 100vh;
     width: 100vw;
     /*background-color: #101010;*/
-    /*background-image: url('../img/Background-night.png');*/
+    /*background-image: url('../img/Background-night.webp');*/
     background-repeat: no-repeat;
     background-position: start;
     background-size: contain;
@@ -95,13 +95,13 @@ body::-webkit-scrollbar {
 .light-mode .container-header,
 .light-mode1 .container-header {
     transition: all 0.5s;
-    background-image: url('../img/Background-light.png');
+    background-image: url('../img/Background-light.webp');
 }
 
 .dark-mode .container-header,
 .dark-mode1 .container-header {
     transition: all 0.5s;
-    background-image: url('../img/Background-night.png');
+    background-image: url('../img/Background-night.webp');
 }
 
 h1 {
