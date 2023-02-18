@@ -1,0 +1,197 @@
+.menubody {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    top: 0;
+    right: 0;
+    margin-right: 5px;
+    z-index: 1;
+}
+
+.sidebar {
+    position: relative;
+    padding-top: 60px;
+    height: 100%;
+    width: 50px;
+    transition: 0.5s;
+    overflow: hidden;
+    background: #1d1c1c;
+    box-shadow: 10px 0 0 #002048;
+    border-left: 5px solid #1d1d1d;
+}
+
+.sidebar:hover {
+    width: 250px;
+    border-top-left-radius: 113px;
+}
+
+.menubody:hover~.contentHome,
+.menubody:hover~.contentAll {
+    transition: 0.5s;
+    filter: blur(3px);
+}
+
+.sidebar h2 {
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    font-size: 1.5rem;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 15px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sidebar a:hover {
+    background: #2d2d2d;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.sidebar a.active {
+    background: #002048;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.sidebar:hover hr {
+    opacity: 1;
+    width: 80%;
+    border-top: 1px solid rgb(59, 59, 59);
+    background: none;
+}
+
+.sidebar hr {
+    opacity: 0;
+    width: 0%;
+    border-top: 1px solid rgb(59, 59, 59);
+    background: none;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.sidebar i {
+    padding-right: 15px;
+}
+
+#check:checked~.sidebar {
+    left: -190px;
+}
+
+#check:checked~.sidebar a span {
+    display: none;
+}
+
+#check:checked~.sidebar a {
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+/* ======================================================
+ *                    DESIGN RESPONSÃVO 
+ * ======================================================
+ */
+
+@media screen and (max-width: 600px) {
+
+    .menubody {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        top: 0;
+        right: 0;
+        margin-right: 5px;
+        z-index: 1;
+    }
+
+    .sidebar {
+        position: relative;
+        padding-top: 60px;
+        height: 100%;
+        width: 30px;
+        transition: 0.5s;
+        overflow: hidden;
+        background: #1d1c1c;
+        box-shadow: 10px 0 0 #002048;
+        border-left: 5px solid #1d1d1d;
+    }
+
+    .sidebar:hover {
+        width: 200px;
+    }
+
+    .menubody:hover~.contentHome,
+    .menubody:hover~.contentAll {
+        transition: 0.5s;
+        filter: blur(3px);
+    }
+
+    .sidebar a {
+        color: #fff;
+        display: flex;
+        align-items: baseline;
+
+        width: 100%;
+        height: 60px;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        padding-left: 2px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        transition: 0.5s;
+        transition-property: background;
+    }
+
+    .sidebar a:hover {
+        background: #2d2d2d;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .sidebar hr {
+        width: 80%;
+        color: #53535375;
+
+    }
+
+    .sidebar a.active {
+        background: #002048;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .sidebar i {
+        padding-right: 15px;
+    }
+
+    #check:checked~.sidebar {
+        left: -190px;
+    }
+
+    #check:checked~.sidebar a span {
+        display: none;
+    }
+
+    #check:checked~.sidebar a {
+        font-size: 20px;
+        margin-left: 170px;
+        width: 80px;
+    }
+}

@@ -1,0 +1,256 @@
+.anim-linefull {
+    content: '';
+    border: none;
+    position: absolute;
+    width: 1100px;
+    height: 2px;
+    background: linear-gradient(90deg, #1d21ff, #23a6d5, #00e0d5, #23a6d5, #1d21ff);
+    animation: gradient 4s linear infinite;
+    transition: 0.5s;
+}
+
+@keyframes gradient {
+
+    0% {
+        background-position-x: 0;
+    }
+
+
+    100% {
+        background-position-x: 1100px;
+    }
+}
+
+.anim-linesmall {
+    content: '';
+    border: none;
+    position: absolute;
+    width: 500px;
+    height: 2px;
+    background: linear-gradient(90deg, #1d21ff, #23a6d5, #00e0d5, #23a6d5, #1d21ff);
+    animation: gradient 4s linear infinite;
+    transition: 0.5s;
+}
+
+
+
+/*.Outhabilidades1 {
+    width: 1100px;
+    border-radius: 10px;
+    padding: 1rem 0rem 0rem 0rem;
+    border: 1px solid black;
+}*/
+
+.habilidades1 {
+
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1100px;
+    /*overflow-x: scroll; */
+}
+
+.habilidades1 .icon {
+    margin: 0 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.languages .icon {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    width: 74px;
+    height: 45.12px;
+    margin-right: 10px;
+}
+
+.habilidades1 .icon span {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    display: block;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.languages .icon span {
+    width: 74px;
+    height: 45.12px;
+    position: relative;
+    display: block;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.habilidades1 .icon span i,
+.languages .icon span img {
+    font-size: 25px;
+    line-height: 60px;
+    color: black;
+
+}
+
+.habilidades1 .icon:hover span i,
+.languages .icon:hover span img {
+    color: #fff;
+}
+
+.habilidades1 .javascript:hover span i {
+    color: #000;
+}
+
+.habilidades1 .icon .tooltip,
+.languages .icon .tooltip {
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.habilidades1 .icon:hover .tooltip {
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.languages .icon:hover .tooltip {
+    top: 60px;
+    opacity: 1;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.habilidades1:hover> :not(:hover) {
+    opacity: .4;
+    transform: scale(0.9);
+}
+
+.habilidades1 .icon .tooltip:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -8px;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.languages .icon .tooltip:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    top: -8px;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.habilidades1 .icon:hover span,
+.habilidades1 .icon:hover .tooltip,
+.languages .icon:hover span,
+.languages .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.habilidades1 .php:hover span,
+.habilidades1 .php:hover .tooltip,
+.habilidades1 .php:hover .tooltip:before {
+    background: #787CB5;
+}
+
+.habilidades1 .C:hover span,
+.habilidades1 .C:hover .tooltip,
+.habilidades1 .C:hover .tooltip:before {
+    background: #3950af;
+}
+
+.habilidades1 .Arduino:hover span,
+.habilidades1 .Arduino:hover .tooltip,
+.habilidades1 .Arduino:hover .tooltip:before {
+
+    background: #0689ad;
+}
+
+.habilidades1 .Mysql:hover span,
+.habilidades1 .Mysql:hover .tooltip,
+.habilidades1 .Mysql:hover .tooltip:before {
+    background: #F29111;
+}
+
+.habilidades1 .html:hover span,
+.habilidades1 .html:hover .tooltip,
+.habilidades1 .html:hover .tooltip:before {
+    background: #E34C26;
+}
+
+.habilidades1 .css:hover span,
+.habilidades1 .css:hover .tooltip,
+.habilidades1 .css:hover .tooltip:before {
+    background: #264DE4;
+}
+
+.habilidades1 .python:hover span,
+.habilidades1 .python:hover .tooltip,
+.habilidades1 .python:hover .tooltip:before {
+    background: #306998;
+}
+
+.habilidades1 .javascript:hover span,
+.habilidades1 .javascript:hover .tooltip,
+.habilidades1 .javascript:hover .tooltip:before {
+    background: #F7D027;
+    color: #000;
+}
+
+.habilidades1 .bootstrap:hover span,
+.habilidades1 .bootstrap:hover .tooltip,
+.habilidades1 .bootstrap:hover .tooltip:before {
+    background: #8500b9;
+}
+
+.habilidades1 .excel:hover span,
+.habilidades1 .excel:hover .tooltip,
+.habilidades1 .excel:hover .tooltip:before {
+    background: #1D6F42;
+}
+
+.languages .BR:hover span,
+.languages .BR:hover .tooltip,
+.languages .BR:hover .tooltip:before {
+    background: #0c552d;
+}
+
+.languages .USA:hover span,
+.languages .USA:hover .tooltip,
+.languages .USA:hover .tooltip:before {
+    background: #00218d;
+    z-index: 2;
+}

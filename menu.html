@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu5.css">
+
+</head>
+
+<div class="menubody">
+
+    <div class="sidebar">
+
+        <!-- <a href="../Portfolio_GustavoSantos/" id="home"><i class="fa-solid fa-home"></i> <div>Home</span></a>
+        <a href="../Portfolio_GustavoSantos/Projetos.php" id="projetos"><i class="fa-solid fa-code">
+            </i><span>Projetos</span></a>
+        <a href="#" id="algumacoisa"><i class="fa-solid fa-gears"></i> <span>Alguma Coisa</span></a>
+        <a href="Sobre_mim.php" id="about"><i class="fa-solid fa-user"></i> <span>Sobre mim</span></a> -->
+
+    </div>
+
+</div>
+</span>
+
+</html>
+
+<script>
+    $(document).ready(function() {
+        carrega();
+    });
+
+    function carrega() {
+        const idioma = localStorage.getItem('idioma');
+
+        if (!idioma) {
+            localStorage.setItem('idioma', 'BR')
+
+            $.ajax({
+
+                method: 'post',
+                dataType: 'html',
+                url: 'AjaxIdioma/menu/menuBR.html',
+                data: 'idioma=' + idioma,
+                success: function(data) {
+                    $('.sidebar').html(data);
+                }
+
+            });
+
+        } else if (idioma == 'BR') {
+
+            $.ajax({
+
+                method: 'post',
+                dataType: 'html',
+                url: 'AjaxIdioma/menu/menuBR.html',
+                data: 'idioma=' + idioma,
+                success: function(data) {
+                    $('.sidebar').html(data);
+                }
+
+            });
+        } else if (idioma == 'EN') {
+
+            $.ajax({
+
+                method: 'post',
+                dataType: 'html',
+                url: 'AjaxIdioma/menu/menuEN.html',
+                data: 'idioma=' + idioma,
+                success: function(data) {
+                    $('.sidebar').html(data);
+                }
+
+            });
+        }
+    }
+</script>

@@ -1,0 +1,182 @@
+@media screen and (max-width: 600px) {
+
+    /* CORPO HTML */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        /* background-color: #101010;*/
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* MENU */
+
+    .menu {
+        top: 0;
+        right: 0;
+        position: fixed;
+    }
+
+    /* TEXTOS GENÉRICOS */
+
+    .text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        margin-top: 30px;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 4px;
+    }
+
+    /* HEADER PRINCIPAL */
+
+    .container-header {
+        height: 100vh;
+        width: 100vw;
+        background-color: #101010;
+        background-image: url('../img/Background.png');
+        background-repeat: no-repeat;
+        background-position: start;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+        padding: 0 20px;
+        position: relative;
+
+    }
+
+    h1 {
+        font-size: 35px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: white;
+    }
+
+    h3 {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    /* BOTÕES PARA REDES SOCIAIS */
+    .Social {
+
+        margin-top: 1rem;
+        display: flex;
+    }
+
+
+    .Social a {
+
+        cursor: pointer;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border: 1px solid black;
+        color: white;
+        min-width: 4rem;
+        align-items: center;
+        justify-items: center;
+        font-size: 15pt;
+
+        transition: .5s ease-in-out;
+    }
+
+    .Social a:hover {
+        background-color: #002048;
+    }
+
+    .content {
+        background: rgb(0, 32, 72);
+        background: linear-gradient(0deg, rgba(0, 32, 72, 1) 15%, rgba(16, 16, 16, 1)30%);
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .secoes {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secaoHabilidade {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Outhabilidades1 {
+        height: 55px;
+        width: 90vw;
+        border-radius: 10px;
+        padding: 1rem 0rem 0rem 0rem;
+        border: 1px solid black;
+    }
+
+    .habilidades1 {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 90vw;
+        height: 55px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .habilidades1 i {
+        color: white;
+        font-size: 30px;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 1rem;
+
+    }
+
+    #atrr:hover {
+        transform: scale(1.1);
+        transition: all 0.5s;
+    }
+
+    .habilidades1::-webkit-scrollbar {
+        width: 15px;
+        height: 5px;
+    }
+
+    .habilidades1::-webkit-scrollbar-track {
+        background: #888888;
+    }
+
+    .habilidades1::-webkit-scrollbar-thumb {
+        background: rgb(39, 38, 38);
+    }
+
+
+    h5 {
+        color: white;
+        display: block;
+        font-size: 0.83em;
+        font-weight: normal;
+        margin: 10px;
+    }
+}
