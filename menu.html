@@ -18,12 +18,12 @@
         </div>
         
         
-        <a href="../Portfolio_GustavoSantos/" id="home"><i class="fa-solid fa-home"></i> <span>Página Inicial</span></a>
+        <a href="gustavoolsantos.github.io/MyPortfolio/" id="home"><i class="fa-solid fa-home"></i> <span>Página Inicial</span></a>
         <hr>
-        <a href="../Portfolio_GustavoSantos/Projetos.html" id="projetos"><i class="fa-solid fa-code">
+        <a href="gustavoolsantos.github.io/MyPortfolio/Projetos.html" id="projetos"><i class="fa-solid fa-code">
             </i><span>Projetos</span></a>
         <hr>
-        <a href="Sobre_mim.html" id="about"><i class="fa-solid fa-user"></i> <span>Sobre Mim</span></a>
+        <a href="gustavoolsantos.github.io/MyPortfolio/Sobre_mim.html" id="about"><i class="fa-solid fa-user"></i> <span>Sobre Mim</span></a>
         
         <script>
             $(document).ready(function() {
@@ -35,7 +35,7 @@
         
                 url = window.location.href;
         
-                if (url == "https://gustavoolsantos.github.io/MyPortfolio//") {
+                if (url == "https://gustavoolsantos.github.io/MyPortfolio/") {
                     var menu = document.getElementById('home');
                     menu.className = "active";
                 } else if (url == "https://gustavoolsantos.github.io/MyPortfolio//Projetos.html") {
@@ -54,56 +54,3 @@
 </span>
 
 </html>
-
-<script>
-    $(document).ready(function() {
-        carrega();
-    });
-
-    function carrega() {
-        const idioma = localStorage.getItem('idioma');
-
-        if (!idioma) {
-            localStorage.setItem('idioma', 'BR')
-
-            $.ajax({
-
-                method: 'post',
-                dataType: 'html',
-                url: 'AjaxIdioma/menu/menuBR.html',
-                data: 'idioma=' + idioma,
-                success: function(data) {
-                    $('.sidebar').html(data);
-                }
-
-            });
-
-        } else if (idioma == 'BR') {
-
-            $.ajax({
-
-                method: 'post',
-                dataType: 'html',
-                url: 'AjaxIdioma/menu/menuBR.html',
-                data: 'idioma=' + idioma,
-                success: function(data) {
-                    $('.sidebar').html(data);
-                }
-
-            });
-        } else if (idioma == 'EN') {
-
-            $.ajax({
-
-                method: 'post',
-                dataType: 'html',
-                url: 'AjaxIdioma/menu/menuEN.html',
-                data: 'idioma=' + idioma,
-                success: function(data) {
-                    $('.sidebar').html(data);
-                }
-
-            });
-        }
-    }
-</script>
