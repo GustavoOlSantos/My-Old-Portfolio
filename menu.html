@@ -13,11 +13,40 @@
 
     <div class="sidebar">
 
-        <!-- <a href="../Portfolio_GustavoSantos/" id="home"><i class="fa-solid fa-home"></i> <div>Home</span></a>
-        <a href="../Portfolio_GustavoSantos/Projetos.php" id="projetos"><i class="fa-solid fa-code">
+        <div class="space" style="height: 200px;">
+
+        </div>
+        
+        
+        <a href="../Portfolio_GustavoSantos/" id="home"><i class="fa-solid fa-home"></i> <span>Página Inicial</span></a>
+        <hr>
+        <a href="../Portfolio_GustavoSantos/Projetos.html" id="projetos"><i class="fa-solid fa-code">
             </i><span>Projetos</span></a>
-        <a href="#" id="algumacoisa"><i class="fa-solid fa-gears"></i> <span>Alguma Coisa</span></a>
-        <a href="Sobre_mim.php" id="about"><i class="fa-solid fa-user"></i> <span>Sobre mim</span></a> -->
+        <hr>
+        <a href="Sobre_mim.html" id="about"><i class="fa-solid fa-user"></i> <span>Sobre Mim</span></a>
+        
+        <script>
+            $(document).ready(function() {
+                aaa();
+            });
+        
+        
+            function aaa() {
+        
+                url = window.location.href;
+        
+                if (url == "https://gustavoolsantos.github.io/MyPortfolio//") {
+                    var menu = document.getElementById('home');
+                    menu.className = "active";
+                } else if (url == "https://gustavoolsantos.github.io/MyPortfolio//Projetos.html") {
+                    var menu = document.getElementById('projetos');
+                    menu.className = "active";
+                } else if (url == "https://gustavoolsantos.github.io/MyPortfolio//Sobre_mim.html") {
+                    var menu = document.getElementById('about');
+                    menu.className = "active";
+                }
+            };
+        </script>
 
     </div>
 
