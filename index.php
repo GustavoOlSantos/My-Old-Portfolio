@@ -20,11 +20,7 @@
 
 </head>
 
-<script>
-    $(function() {
-        $("#menu").load("menu.html");
-    });
-</script>
+<?php include("menu.html"); ?>
 
 <div id="menu"></div>
 
@@ -37,23 +33,23 @@
         <header class="container-header">
 
             <div class="languages">
-        
+
                 <div style="margin-right: 1080px;">
                     <a onclick="mode();"><i id="mode" class="" style="font-size: 30pt;"></i></a>
                 </div>
-        
-        
+
+
                 <div class="icon BR">
                     <div class="tooltip BR">Português</div>
                     <span> <a onclick="Idioma('BR', '1')"> <img src="img/Brasil.jpg" alt=""></a> </span>
                 </div>
-        
+
                 <div class="icon USA">
                     <div class="tooltip USA">English</div>
                     <span onclick="Idioma('EN', '1')"> <a> <img src="img/EUA.png" alt=""></a> </span>
                 </div>
             </div>
-        
+
             <div class="infos">
                 <h1> Gustavo Santos</h1>
                 <h2> Desenvolvedor Júnior</h2>
@@ -65,19 +61,19 @@
                         class="fa-solid fa-envelope"></i>santos.gustavo.of@gmail.com
                 </h6>
             </div>
-        
+
             <div class="Social">
                 <a href="https://www.linkedin.com/in/gustavo-santos-993436218/">
                     <i class="fa-brands fa-linkedin"></i> LinkedIn
                 </a>
-        
+
                 <a href="https://github.com/GustavoOlSantos">
                     <i class="fa-brands fa-github"></i> Github
                 </a>
-        
+
             </div>
-        
-        
+
+
         </header>
     </div>
 
