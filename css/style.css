@@ -98,13 +98,13 @@
     .light-mode .container-header,
     .light-mode1 .container-header {
         transition: all 0.5s;
-        background-image: url('../img/Background-light.png');
+        background-image: url('../img/Background-light.webp');
     }
 
     .dark-mode .container-header,
     .dark-mode1 .container-header {
         transition: all 0.5s;
-        background-image: url('../img/Background-night.png');
+        background-image: url('../img/Background-night.webp');
     }
 
     h1 {
