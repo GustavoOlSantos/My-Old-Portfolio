@@ -27,6 +27,11 @@
 
     /* TEXTOS GENÉRICOS */
 
+    .outText {
+        display: flex;
+        justify-content: center;
+    }
+
     .text {
         display: flex;
         flex-direction: row;
@@ -250,6 +255,12 @@
         align-items: flex-start;
     }
 
+    .formExp {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
     .secaoHabilidade {
         margin-top: 30px;
         display: flex;
@@ -356,19 +367,24 @@
 
     /* TEXTOS GENÉRICOS */
 
+    .outText {
+        display: flex;
+        justify-content: center;
+        width: 330px;
+    }
+
     .text {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
         margin-top: 30px;
-        margin-left: 30px;
         /*color: white;*/
         font-size: 15px;
         letter-spacing: 1px;
         line-height: 20px;
-        width: 1000px;
-        text-align: center;
+        width: 290px;
+        text-align: justify;
     }
 
     .dark-mode .text,
@@ -386,7 +402,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
-        width: 500px;
+        text-align: left;
+        width: 223px;
         margin-top: 30px;
         /*color: white;*/
         font-size: 15px;
@@ -550,12 +567,32 @@
         background-color: #002048;
     }
 
-    .content {
-        background: rgb(0, 32, 72);
-        background: linear-gradient(0deg, rgba(0, 32, 72, 1) 15%, rgba(16, 16, 16, 1)30%);
+    .contentHome {
+        /*background: rgb(0, 32, 72); */
+        /* background: linear-gradient(0deg, rgba(0, 32, 72, 1) 0%, rgba(16, 16, 16, 1) 20%); */
+        /*background: #101010;*/
         display: flex;
         flex-direction: column;
         padding-bottom: 20px;
+    }
+
+    .contentAll {
+        /*background: rgb(0, 32, 72); */
+        /*height: 100vh;*/
+        /*background: #101010;*/
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .img-icon img {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-right: 20px;
+        margin-left: 10px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     }
 
     .secoes {
@@ -566,12 +603,28 @@
         align-items: center;
     }
 
+    .secaoFormExp {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 330px;
+    }
+
+    .formExp {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        width: 330px;
+    }
+
     .secaoHabilidade {
         margin-top: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 330px;
     }
 
     .Outhabilidades1 {
@@ -580,26 +633,6 @@
         border-radius: 10px;
         padding: 1rem 0rem 0rem 0rem;
         border: 1px solid black;
-    }
-
-    .habilidades1 {
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 90vw;
-        height: 55px;
-        overflow-x: scroll;
-        overflow-y: hidden;
-    }
-
-    .habilidades1 i {
-        color: white;
-        font-size: 30px;
-        margin-left: 60px;
-        margin-right: 60px;
-        margin-bottom: 1rem;
-
     }
 
     #atrr:hover {
@@ -640,7 +673,7 @@
     }
 
     .Projetos {
-        margin-left: 50px;
+        margin-left: 20px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -648,26 +681,26 @@
 
     .imagem {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
         margin-bottom: 30px;
     }
 
     .imagem img {
-        width: 500px;
+        width: 290px;
         border: #292929 solid;
         border-radius: 30px;
     }
 
     .text-smaller {
         margin-top: 10px;
-        margin-left: 30px;
+        /*margin-left: 30px;*/
         /*color: white;*/
         font-size: 12px;
         letter-spacing: 1px;
         line-height: 20px;
-        width: 700px;
-        text-align: left;
+        width: 290px;
+        text-align: justify;
     }
 
     .dark-mode .text-smaller,
